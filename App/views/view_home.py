@@ -1,7 +1,4 @@
-from flask import Blueprint, current_app
-
-from App.ext import models
-from App.models.models import BaseMain
+from flask import Blueprint
 
 homebp = Blueprint("homebp", __name__)
 
