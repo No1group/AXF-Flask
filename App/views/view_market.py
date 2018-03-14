@@ -9,4 +9,4 @@ def init_marketbp(app):
 
 @marketbp.route('/market/')
 def index():
-    return 'xuehui'
+    return '薛科的ｍａｒｋｅｔ页面'
