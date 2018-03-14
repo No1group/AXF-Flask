@@ -1,5 +1,5 @@
 from sqlalchemy.ext.declarative import AbstractConcreteBase
-from sqlalchemy.ext.declarative.base import declared_attr
+
 
 from App.ext import models
 

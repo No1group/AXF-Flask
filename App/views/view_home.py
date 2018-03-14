@@ -11,14 +11,5 @@ def init_homebp(app):
 
 @homebp.route('/')
 def index():
-    m = BaseMain()
-    m.name = 'ssss'
-    m.img = 'sss'
-    m.trackid = '1'
-    models.session.add(m)
-    models.session.commit()
 
-
-
-
-    return 'hh0'
+    return 'hello'

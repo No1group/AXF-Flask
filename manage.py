@@ -5,7 +5,6 @@ from flask_script import Manager
 
 from App import create_app
 
-from flask import current_app
 
 
 app = create_app('develop')
