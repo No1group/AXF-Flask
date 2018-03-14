@@ -7,6 +7,6 @@ def init_minebp(app):
     app.register_blueprint(blueprint=minebp)
 
 
-@minebp.route('/')
+@minebp.route('/mine/')
 def index():
     return 'hh'

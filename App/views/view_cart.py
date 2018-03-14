@@ -7,6 +7,6 @@ def init_cartbp(app):
     app.register_blueprint(blueprint=cartbp)
 
 
-@cartbp.route('/')
+@cartbp.route('/cart/')
 def index():
     return 'hh'

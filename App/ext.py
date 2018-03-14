@@ -1,15 +1,19 @@
 from flask_cache import Cache
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
+from flask_debugtoolbar import DebugToolbarExtension
 
-model = SQLAlchemy()
+models = SQLAlchemy()
 migrate = Migrate()
+# debugtoolbar = DebugToolbarExtension()
 # cache = Cache(
 #     config={"CACHE_TYPE":"redis"}
 # )
 
 
 def init_ext(app):
-    model.init_app(app=app)
-    migrate.init_app(app=app, db=model)
-    # cache.init_app(app)
+    models.init_app(app=app)
+    migrate.init_app(app=app, db=models)
+
+    # cache.init_app(app=app)
+    # debugtoolbar.init_app(app=app)

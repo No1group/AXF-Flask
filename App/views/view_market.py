@@ -7,6 +7,6 @@ def init_marketbp(app):
     app.register_blueprint(blueprint=marketbp)
 
 
-@marketbp.route('/')
+@marketbp.route('/market/')
 def index():
     return 'hh'

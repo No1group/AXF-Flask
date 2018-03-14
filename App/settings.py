@@ -3,7 +3,7 @@
 class Config():
     DEBUG = False
     TESTING = False
-    SECRET = 'rrr'
+    SECRET_KEY = 'rrr'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 

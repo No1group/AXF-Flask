@@ -13,6 +13,7 @@ def create_app(env):
     app = Flask(__name__)
 
     app.config.from_object(settings.env.get(env))
+
     init_ext(app)
     init_homebp(app)
     init_marketbp(app)
