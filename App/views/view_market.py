@@ -9,4 +9,4 @@ def init_marketbp(app):
 
 @marketbp.route('/market/')
 def index():
-    return 'hh'
+    return 'xuehui'
