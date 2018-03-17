@@ -1,11 +1,11 @@
 {% extends 'app/base/base_main.html' %}
 {% load static %}
 {% block extraCSS %}
-    {{ block.super }}
-    <link rel="stylesheet" href="{% static 'app/market/css/market.css' %}">
+    {{ super() }}
+    <link rel="stylesheet" href="{{ url_for('static,filename='app/market/css/market.css')}}">
 {% endblock %}
 {% block extraJS %}
-    <script type="text/javascript" src="{% static 'app/market/js/market.js' %}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='app/market/js/market.js')}}"></script>
 {% endblock %}
 
 {% block content %}
@@ -16,7 +16,7 @@
             <ul>
                 {% for foodtype in foodtypes %}
                     <li>
-                        <a href="{% url 'app:marketWithParams' typeid=foodtype.typeid childcid='0' sortrule='0' %}">{{ foodtype.typename }}</a>
+                        <a href="{{ url_for( 'marketbp.marketWithParams' typeid=foodtype.typeid childcid='0' sortrule='0' )}}">{{ foodtype.typename }}</a>
                         {% ifequal foodtype.typeid typeid %}
                             <div class="yellowSlide"></div>
                         {% endifequal %}
