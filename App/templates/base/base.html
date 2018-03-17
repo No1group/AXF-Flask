@@ -1,19 +1,19 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
 
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
-    <link rel="stylesheet" href="{% static 'css/swiper.css' %}">
-    <link rel="stylesheet" href="{% static 'app/base/css/reset.css' %}">
-    <script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/swiper.jquery.js' %}"></script>
-    <script type="text/javascript" src="{% static 'app/base/js/base.js' %}"></script>
+    <link rel="stylesheet" href="{{ url_for('static',filename ='css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename ='css/swiper.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static',filename ='app/base/css/reset.css')}}">
+    <script type="text/javascript" src="{{ url_for('static',filename ='js/jqery.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename ='js/bootstrap.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename ='js/swiper.jquery.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename ='app/base/js/base.js')}}"></script>
 
     {% block extraJS %}
 
