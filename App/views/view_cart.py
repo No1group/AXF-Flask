@@ -9,6 +9,7 @@ def init_cartbp(app):
 
 @cartbp.route('/cart/')
 def index():
+    print('xxx')
     return '李广华页面'
 
 
