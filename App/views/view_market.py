@@ -17,9 +17,10 @@ def index():
 def market(request):
     return redirect(url_for("marketbp.marketWithParams", kwargs={"typeid": "104749", "childcid": '0', "sortrule": "0"}))
 
-@marketbp.route('/')
+@marketbp.route('/m2/')
 def marketWithParams(typeid, childcid, sortrule):
     foodtypes = FoodType.query.all()
+    print(foodtypes)
     goodsList = Goods.query.filter(categoryid=typeid)
 
     if childcid != "0":
